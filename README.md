@@ -13,7 +13,7 @@ wget -O - https://raw.githubusercontent.com/rectcircle/patch-vscode-1-86-for-old
 
 3. Retry opening VSCode Remote SSH again and reconnect to the old Linux device.
 
-## Manual downlaod and usge
+## Manual downlaod and usage
 
 > In case you experience network issues.
 
