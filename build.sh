@@ -37,3 +37,6 @@ cp -rfP /lib/x86_64-linux-gnu/libz.so.* dist/lib/
 wget https://github.com/NixOS/patchelf/releases/download/$patchelf_version/patchelf-$patchelf_version-x86_64.tar.gz -O patchelf.tar.gz
 tar -zxvf patchelf.tar.gz -C patchelf/
 cp patchelf/bin/patchelf dist/bin/
+
+# archive
+tar -C ./dist -czvf patch-vscode-1-86-for-old-linux.tar.gz ./

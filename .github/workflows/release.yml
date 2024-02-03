@@ -10,4 +10,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: patch-vscode-1-86-for-old-linux
-          path: dist/
+          path: patch-vscode-1-86-for-old-linux.tar.gz
