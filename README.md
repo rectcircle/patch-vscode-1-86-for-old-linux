@@ -1,1 +1,1 @@
-# Patch Old Linux VSCode 1.86+
+# Patch VSCode 1.86+ For Old Linux

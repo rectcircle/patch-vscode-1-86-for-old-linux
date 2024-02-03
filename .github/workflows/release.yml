@@ -1,13 +1,13 @@
 name: release
 on: [push]
 jobs:
-  release:
+  build:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      - run: whereis libc.so.6 && /usr/lib/x86_64-linux-gnu/libc.so.6 ; ls -al /usr/lib/x86_64-linux-gnu/libstdc++.so.6*
-      # - run: sh build.sh
-      # - uses: actions/upload-artifact@v4
-      #   with:
-      #     name: patch-vscode-1-86-for-old-linux
-      #     path: dist/
+      # - run: whereis libc.so.6 && /usr/lib/x86_64-linux-gnu/libc.so.6 ; ls -al /usr/lib/x86_64-linux-gnu/libstdc++.so.6*
+      - run: sh build.sh
+      - uses: actions/upload-artifgact@v4
+        with:
+          name: patch-vscode-1-86-for-old-linux
+          path: dist/
