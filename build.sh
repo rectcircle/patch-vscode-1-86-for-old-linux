@@ -2,7 +2,7 @@
 set -ex
 
 # constant
-glibc_prefix=/opt/node18_so
+glibc_prefix=/opt/patch-vscode-1-86-for-old-linux
 build_root=$(pwd)
 glibc_name=glibc-2.35
 patchelf_version=0.18.0
