@@ -5,8 +5,9 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      - run: sh build.sh
-      - uses: actions/upload-artifact@v4
-        with:
-          name: patch-vscode-1-86-for-old-linux
-          path: dist/
+      - run: whereis libc.so.6
+      # - run: sh build.sh
+      # - uses: actions/upload-artifact@v4
+      #   with:
+      #     name: patch-vscode-1-86-for-old-linux
+      #     path: dist/
