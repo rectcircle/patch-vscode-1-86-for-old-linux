@@ -35,9 +35,9 @@ else
 fi
 
 # do patch
-vscode_node_paths=$(ls $home_dir/.vscode-server/bin/*/node)
+vscode_node_paths=($(ls $home_dir/.vscode-server/bin/*/node))
 
-if [ -z $vscode_node_paths ] ;then
+if [ -z "$vscode_node_paths" ] ;then
     echo "Warning: vscdoe-server node not found on $home_dir/.vscode-server/bin/*/node, please first connect to the username ($1) of machine once"
     exit 0
 fi
